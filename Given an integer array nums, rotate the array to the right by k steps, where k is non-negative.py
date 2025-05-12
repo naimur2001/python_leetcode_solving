@@ -10,7 +10,13 @@
 
 class Solution:
     def rotate(self, nums: list[int], k: int) -> None:
-        if k==0:
-            return 0
-        k=k%len(nums)
-        nums[:] = nums[-k:] + nums[:-k]     
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        k= k%len(nums)
+        nums[:]=nums[-k:]+nums[:-k]
+        return nums
+
+  
+s1=Solution()
+print(s1.rotate([1,2,3,4,5,6,7],3))
