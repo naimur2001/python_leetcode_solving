@@ -14,4 +14,9 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         
-        
+       print(nums1+nums2)
+       return sorted(nums1+nums2)
+    
+
+s=Solution()
+print(s.findMedianSortedArrays([1,3],[2]))  

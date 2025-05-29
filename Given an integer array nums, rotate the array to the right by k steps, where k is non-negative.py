@@ -13,7 +13,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        k= k%len(nums)
+        k= k%len(nums) #if k is greater than len(nums)
         nums[:]=nums[-k:]+nums[:-k]
         return nums
 
