@@ -24,8 +24,6 @@ class Solution:
              if maxReach>=len(nums)-1:
                 return jumpCounter
                
-            # if maxReach>=len(nums)-1:
-            #       return jumpCounter
 
           
         return jumpCounter
